@@ -21,4 +21,4 @@ int main(){
 
 	cout << sorted(arr,si,n);
 	return 0;
-}
+}€
