@@ -11,7 +11,7 @@ void printsubsequence(string str, string ans){
 	string ros= str.substr(1);
 
 	printsubsequence(ros, ans);
-	printsubsequence(ros, ans + ch);
+	printsubsequence(ros , ans + ch);
 }
 int main(){
 	printsubsequence("abc","");
