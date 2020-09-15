@@ -9,7 +9,13 @@ int main(){
 
 
 	int p =b-x;
-	cout << (a+p);
+	if(a<0){
+		cout << (a-p);
+	}
+	else{
+		cout << (a+p);
+	}
+	
 }
 else{
 	cout << (a-x);
