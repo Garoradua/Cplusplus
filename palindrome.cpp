@@ -1,22 +1,36 @@
-#include<iostream>
+#include <iostream>
+#include <cstring>
 using namespace std;
-int main (){
-	cout << "Enter any Number";
-	int n;
-	int sum=0, last=0, temp=0;
-	cin >> n;
-	temp =n;
-	while(n > 0){
-	last = n%10;
-	sum = (sum*10) + last;
-	n = n/10;
+
+bool palindrome(char a[])
+{
+	int i=0;
+	int j= strlen(a)-1;
+
+	while(i<j)
+	{
+		if(a[i]==a[j])
+		{
+			i++;
+			j--;
+		}
+
+		else{
+			return false;
+		}
+	}
+	return true;
 }
-	if(temp==sum){
-		cout << "palindrome no";
+int main()
+{	char a[1000];
+	cin.getline(a,1000);
+
+	if(palindrome(a)){
+		cout << "palindrome";
 	}
 	else{
-		cout << "Not palindrome";
+		cout << "Not palindrome"; 
 	}
-	return 0;
 
+	return 0;
 }
