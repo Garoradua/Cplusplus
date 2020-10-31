@@ -5,4 +5,5 @@ int main(){
 	int x;
 	x=a+b/c+d*e;
 	cout << x;
+	
 }
