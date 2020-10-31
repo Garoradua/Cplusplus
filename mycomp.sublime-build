@@ -1,0 +1,6 @@
+
+"cm{d" : "gcc $file_name -o ${file_base_name} && ${file_base_name}",
+"selector" : "source.c",
+"shell": true,
+"working_dir" : "$file_path"
+}
