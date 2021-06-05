@@ -19,8 +19,9 @@ int main(){
 		}
 		if(min!=i){
 			swap(a[min],a[i]);
+
 		}
-	}
+	}//last
 	for(int i=0; i<n; i++){
 		cout << a[i];
 	}
