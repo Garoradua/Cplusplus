@@ -10,7 +10,7 @@ void rotation(int a[][3],int temp[][3],int row,int col){
 			temp[j][i]= a[i][j];
 		}
 	}
-//rotation
+//rotation....
 	for(int r=0; r<row; r++)
 	{
 		int i=0;
