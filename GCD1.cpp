@@ -6,7 +6,7 @@ int GCD(int a, int b){
 	if(a==b) return a;
 	if(b>a) b=b-a;
 	else a=a-b;
-	GCD(a,b);
+	return GCD(a,b);
 
 }
 int main()
