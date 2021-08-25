@@ -14,6 +14,9 @@ int main()
 	cout << "Enter two Numbers";
 	int a,b;
 	cin >> a >> b;
-	cout << GCD(a,b);
+	int g =  GCD(a,b);
+	int mul = a*b;
+	int lcm = mul/g;
+	cout << lcm;
 	return 0;
 }
